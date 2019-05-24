@@ -1,0 +1,13 @@
+\section{Choix de programmation}
+Différents framework ou librairies ont été utilisées lors de cette première partie. Cette section vise a présenter ces différents outils. Il est à noter que l'utilisation de librairies a été réduite au minimum.\\
+Le logiciel est écrit en \emph{Java} et les communications suivent le protocol \emph{RESTFul}. Le code suit également le pattern MVC (Model-View-Controller). La convention d'écriture adopté pour le projet est le \emph{Camel Case}.\\ L'itération 1 est composée de trois grands éléments; la base de données, l'interface client serveur et l'interface graphique.
+\subsection{Base de données}
+\emph{SQLite} a été choisie pour la gestion de la base de données. Cet outil est léger, avec une grande portabilité et parfaitement adapté pour les plateformes client-serveur. De plus, un fichier \emph{.db} permet de partager la même base de données entre les différents programmeurs. \\
+La liaison entre le principale langage utilisé pour l'application, \emph{Java}, et la base de données est basé sur le \emph{design pattern} DAO (data access object). Ceci signifie que le serveur ne fait pas directement de requêtes à la base de données. Un niveau d'abstraction supplémentaire est ajouté entre le serveur et celle-ci. À chaque table de la base de données correspond une classe qui permet d'y accéder depuis le serveur. La connection et les accès à la base de données se fait grâce à la librairie \emph{JDBC}.
+\subsection{Interface client-serveur}
+L'interface client-serveur a utilisé l'API fourni par \emph{Java}. Pour suivre le protocol \emph{RESTFul}, le logiciel utilise des \emph{token}. En effet, l'état de l'utilisateur n'est pas sauvegardé. Pour identifier et authentifier les différents utilisateurs, un \emph{accessToken} est attribué à chacun lors de la connection à la platforme. Ce \emph{token} est utilisé pour des requêtes privilégiées effectuées au serveur. Celui-ci a une durée de vie d'une heure. Un \emph{refreshToken} est également attribué dès la connection. Lorsque cette heure est écoulée et que le client désire faire une nouvelle requête, le \emph{refreshToken} est utilisé. Ce dernier va créer un nouveau \emph{accessToken} avec une durée de vie de 1h.
+Ce système est basé sur le protocol \emph{OAuth 2}.\\
+L'échange de données est assuré par la librairie \emph{Json}. Ce format d'échange de données est léger, facile d'utilisation et très répandu. \\
+Pour l'envoie de mail, l'extension \emph{mail} de la librairie \emph{Javax} a été utilisée.
+\subsection{Interface graphique}
+L'interface graphique a été créée grâce au logiciel \emph{Java Fx}. Des CSS (Cascading Style Sheets) ont été utilisées également pour personnaliser le style de la platforme.

@@ -1,0 +1,184 @@
+				Historique des Itérations.
+
+1) Itération n° 1 :
+
+1.1) Pré-Itération:
+
+      Points accordés aux histoires : (les points accordés sont sujet à changement, et donc précisés à chaque itération.)
+	
+	- Histoire n° 1 :  60
+	- Histoire n° 2 :  26
+	- Histoire n° 3 :  25
+	- Histoire n° 4 :  35
+	- Histoire n° 5 :  33
+	- Histoire n° 6 :  33
+	- Histoire n° 7 :  16
+	- Histoire n° 8 :  58
+	- Histoire n° 9 :  24
+	- Histoire n° 10 : 33
+	- Histoire n° 11 : 23
+
+1.2) Bilan de la réunion avec les clients : 
+
+	Le délais de la première itération étant exceptionnellement d’une semaine (du lundi 7 mars, au lundi 13 mars à 23h59), seulement 35 points ont pu être attribués.
+
+Après discussion, pour atteindre un quota de 35 points, un accord a été conclu, il nous a été demandé de réaliser l’histoire numéro 5 (Titre : créer un utilisateur, login et mot de passe).
+
+L’estimation de cette histoire étant de 33 points, que les clients veulent atteindre leur quota de 35 points, le développement supplémentaire d’un captcha a été conclu pour combler les 2 points restants.
+
+Résumé du tableau des charges de la première réunion : 
+	- Permettre à l’utilisateur de s’enregistrer si ce n’est pas déjà fait (confirmation 			demandée par e-mail.).
+	- Permettre à l’utilisateur de se connecter en entrant ses identifiants (adresse mail + mot 	de passe)
+	- Développer une sécurité lors de l’inscription à l’aide d’un captcha.
+
+1.3) Récapitulation : 
+
+Fonctionnalités implémentées : 
+	- Permettre à l’utilisateur de s’enregistrer (confirmation demandée par mail).
+	- Permettre à l’utilisateur de se connecter (et de se déconnecter).
+	- Permettre à l’utilisateur de son mail et username.	
+	- Sécurité lors de l’inscription à l’aide d’un captcha.
+
+Fonctionnalités demandées mais manquantes suite au manque de temps : 
+	- Vérification de la modification du mail de l’utilisateur grace à l’envoi d’un message à l’ancienne adresse mail et envoi d’une demande de confirmation à la nouvelle.
+Le client a décidé de laisser tomber cette fonctionnalité.
+
+
+2) Itération n° 2 :
+
+2.1) Pré-Itération:
+
+      Points accordés aux histoires : ( les points accordés sont sujet à changement, et donc précisés à chaque itération.)
+	
+	- Histoire n° 1 :  55
+	- Histoire n° 2 :  35
+	- Histoire n° 3 :  35
+	- Histoire n° 4 :  20
+	- Histoire n° 5 :  35
+	- Histoire n° 6 :  35
+	- Histoire n° 7 :  15
+	- Histoire n° 8 :  70
+	- Histoire n° 9 :  20
+	- Histoire n° 10 : 35
+	- Histoire n° 11 : 35
+
+2.2) Bilan de la réunion avec les clients :
+
+	Le délais de la deuxième itération étant de 4 semaines, ( du mardi 14 mars, au lundi 18 avril), 70 points seront attribués. 
+
+Après discussion, un accord a été effectué : Fusion de l’histoire 1 avec l’histoire 4. Ce qui offre un gain de temps au client et à l’équipe de programmation. (Au lieu d’afficher une carte générique, l’intégration d’une carte de Google map est directement implémentée.)
+
+2.3) Récapitulation : 
+
+Fonctionnalités implémentées : 
+	- Générer une carte interactive à l’aide de Google map.
+- Permettre à un utilisateur ou visiteur de signaler la présence d’un Pokemon sur la carte grâce à une épingle (Signaler le type de Pokemon, l’heure et la date à laquelle ce dernier a été croisé). 
+	- Permettre à l’utilisateur ou visiteur de consulter les signalisations des autres utilisateurs.
+	- Permettre à l’utilisateur d’agrandir ou de rétrécir l’échelle de la carte (« zoomer », 	« dézoomer »).
+- Arranger la signalisation des Pokemon selon l’échelle choisi par l’utilisateur ou      visiteur.
+- Permettre à l’utilisateur ou visiteur de visualiser le chemin le plus court menant à un ou plusieurs pokemon.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3) Itération n° 3 :
+
+3.1) Pré-Itération:
+
+      Points accordés aux histoires : (les points accordés sont sujet à changement, et donc précisés à chaque itération.)
+	
+	- Histoire n° 1 :  55
+	- Histoire n° 2 :  35
+	- Histoire n° 3 :  35
+	- Histoire n° 4 :  20
+	- Histoire n° 5 :  35
+	- Histoire n° 6 :  35
+	- Histoire n° 7 :  15
+	- Histoire n° 8 :  100
+	- Histoire n° 9 :  20
+	- Histoire n° 10 : 50
+	- Histoire n° 11 : 35
+
+3.2) Bilan de la réunion avec les clients :
+
+      Cette troisième itération possède un délais de 2 semaines (du mardi 18 avril au lundi 2 mai) et une attribution de 70 points également.
+
+      Après une démonstration de l’évolution du programme, les clients ont consulté leurs histoires et un cahier des charges a été rempli pour la troisième itération. Une partie de l’histoire 2 avec la totalité de l’histoire 10.
+Comme le nombre de points de ces 2 histoires réunies dépasse 70, les clients ont décidé de demander uniquement la recherche simple de Pokemon sur la carte via leur type et leur nom (pas de recherches combinées) concernant l’histoire 2.
+
+3.3) Récapitulation : 
+
+Fonctionnalités implémentées : 
+	- Filtrer l’affichage des Pokemon via leur nom.
+	- Filtrer l’affichage des Pokemon via leurs types.
+	- Sauvegarder des favoris de filtre de recherche.
+	- Permettre à l’utilisateur de placer des épingles hors ligne.
+- Si l’utilisateur a placé des épingles hors ligne, les synchroniser sur le serveur lors de la connexion de ce dernier.
+- Gérer les conflits dès la connexion de l’utilisateur lorsqu’il a placé une épingle déjà 	connu du serveur (2 épingles d’un même Pokemon à une même date dans un rayon de 10 mètres équivaut à la signalisation du même Pokemon) en mode hors ligne.
+
+Les 2 derniers points n’ayant pas été accompli dans les temps, il a été convenu avec le client qu’ils seraient accompli pour la semaine suivante (pour le mardi 9 mai )
+4) Itération n° 4 :
+
+4.1) Pré-Itération:
+
+      Points accordés aux histoires : (les points accordés sont sujet à changement, et donc précisés à chaque itération.)
+	
+	- Histoire n° 1 :  70
+	- Histoire n° 2 :  50
+	- Histoire n° 3 :  50
+	- Histoire n° 4 :  35
+	- Histoire n° 5 :  50
+	- Histoire n° 6 :  50
+	- Histoire n° 7 :  30
+	- Histoire n° 8 :  115
+	- Histoire n° 9 :  35
+	- Histoire n° 10 : 65
+	- Histoire n° 11 : 50
+
+
+4.2) Bilan de la réunion avec les clients :
+
+	Le délais de cette dernière itération est de 2 semaines également (du mardi 2 mai au Lundi 15 mai) et une attribution des 70 points finaux.
+
+	Comme toutes les fonctionnalités demandées lors de la troisième itération n’ont pas été implémentées, 20 points ont été réservés afin de terminer l’histoire 10, et les 50 autres points ont été attribués pour l’histoire 6 (permettre aux utilisateurs de modifier leur signalisation, et y attribuer une note de confiance).
+
+Tableau des charges : 
+- Si l’utilisateur a placé des épingles hors ligne, les synchroniser sur le serveur lors de la connexion de ce dernier.
+- Gérer les conflits dès la connexion de l’utilisateur lorsqu’il a placé une épingle déjà 	connu du serveur (2 épingles d’un même Pokemon à une même date dans un rayon de 10 mètres équivaut à la signalisation du même Pokemon) en mode hors ligne.
+
+-Permettre à l’utilisateur de modifier les statistiques du pokemon qu’il a signalé (Vie, attaque, Défense)
+-Permettre aux autres utilisateurs d’accorder une note à une signalisation qui ne lui appartient pas, afin de permettre aux utilisateurs de savoir s’ils peuvent se confier à cette signalisation ou pas.
+
+
+
+
+5
+
+
